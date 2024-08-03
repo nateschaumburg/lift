@@ -1,0 +1,12 @@
+<nav id="site-navigation" class="main-navigation">
+    <button class="menu-toggle " aria-controls="menu" aria-expanded="false"></button>
+    <div class="main-nav">
+        {{navigation}}
+
+        {{#if @site.secondary_navigation}}
+        <div class="secondary-nav">
+                {{navigation type="secondary"}}
+        </div>
+        {{/if}}
+    </div>
+</nav><!-- #site-navigation -->

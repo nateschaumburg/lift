@@ -1,0 +1,30 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+	the {body} of the default.hbs template, which contains our header/footer. }}
+<div class="page-wrap">
+	<header class="tag-archive-header">
+		<h4 class="tag-archive-header-name">{{tag.name}}</h4>
+	</header>
+
+	{{! Each post will be output using this markup }}
+	<div class="gh-page post-wrap">
+
+		<div class="gh-container site-main portfolio-wrap">
+
+			<div id="projects" class="project-wrapper">
+				{{#foreach posts}}
+					<div class="post-container">
+						{{> "card"}} {{!-- partials/card.hbs --}}
+					</div>
+				{{/foreach}}
+			</div>
+
+			{{pagination}}
+
+		</div>
+	</div>
+
+	{{!! After all the posts, we have the previous/next pagination links }}
+	{{pagination}}
+</div>

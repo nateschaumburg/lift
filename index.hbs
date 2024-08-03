@@ -1,0 +1,18 @@
+{{!< default}}
+
+<div class="gh-page post-wrap">
+
+	<div class="gh-container site-main portfolio-wrap">
+
+		<div id="projects" class="project-wrapper">
+			{{#foreach posts}}
+				<div class="post-container">
+					{{> "card"}} {{!-- partials/card.hbs --}}
+				</div>
+			{{/foreach}}
+		</div>
+
+		{{pagination}}
+
+	</div>
+</div>

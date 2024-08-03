@@ -1,0 +1,55 @@
+{
+    "name": "lift",
+    "description": "Lift is a minimal portfolio theme for Ghost.",
+    "version": "1.0.1",
+    "engines": {
+        "ghost": ">=5.0.0"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "refueled",
+        "email": "info@refueled.net",
+        "url": "https://refueled.net"
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme",
+        "portfolio-theme"
+    ],
+    "config": {
+        "posts_per_page": 12,
+        "image_sizes": {
+            "xs": {
+                "width": 150
+            },
+            "s": {
+                "width": 300
+            },
+            "m": {
+                "width": 420
+            },
+            "l": {
+                "width": 560
+            },
+            "xl": {
+                "width": 720
+            },
+            "xxl": {
+                "width": 720
+            }
+        },
+        "card_assets": true,
+        "custom": {
+            "footer_text": {
+                "type": "text"
+            },
+            "post_feed_layout": {
+                "type": "select",
+                "options": ["Two Column", "Three Column"],
+                "default": "Three Column",
+                "group": "homepage"
+            }
+        }
+    }
+}
